@@ -409,7 +409,8 @@ body {
   .section-about .row {
     display: grid;
     grid-template-columns: 1fr;
-    height: 60vh; } }
+    height: 95vh;
+    row-gap: 10rem; } }
 
 .col-1-of-4 {
   display: grid;
@@ -455,7 +456,8 @@ body {
 .footer-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 5rem; }
+  column-gap: 5rem;
+  text-align: center; }
   .footer-navigation ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -468,7 +470,8 @@ body {
 
 @media screen and (max-width: 525px) {
   .footer-navigation ul {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr;
+    place-items: center; } }
 
 .com {
   position: relative; }
