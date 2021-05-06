@@ -1,0 +1,35 @@
+.com {
+    position: relative;
+    &:hover &_photo:not(:hover) {
+        transform: scale(0.9);
+    }
+    &_photo {
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        position: absolute;
+        border-radius: 2px;
+        transition: all 0.3s;
+        outline-offset: 2rem;
+        &:hover {
+            transform: scale(1.05) translateY(0.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+            outline: 1.5rem solid $color-primary-light;
+            z-index: 10;
+        }
+    }
+    &_photo_1 {
+        top: -2rem;
+    }
+    &_photo_2 {
+        right: 0px;
+        top: 20px;
+    }
+    &_photo_3 {
+        left: 20%;
+        top: 10rem;
+    }
+}
+
+// .com:hover .com_photo:not(:hover) {
+//     transform: scale(0.9);
+// }

@@ -1,0 +1,48 @@
+.form-group {
+    width: 50%;
+    h2 {
+        text-align: center;
+        display: block;
+    }
+    input {
+        display: block;
+        width: 90%;
+        margin: 2rem;
+        background: rgba($color-white, 0.5);
+        height: 4rem;
+        text-align: left;
+        font-size: 1.5rem;
+        border-radius: 2px;
+        border: none;
+        padding: 1.5rem 2rem;
+        font-family: inherit;
+        font-style: inherit;
+        box-shadow: 0 1rem 2rem rgba(transparent, 0.1);
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border-bottom: 3px solid orangered;
+        }
+        &:valid {
+            border-bottom: green solid 3px;
+        }
+        &::-webkit-input-placeholder {
+            color: rgb(155, 155, 155);
+        }
+    }
+    input:placeholder-shown+label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: -2rem;
+        margin-left: 4.2rem;
+        display: block;
+        transition: all 0.3s;
+        font-family: inherit;
+        font-style: inherit;
+    }
+}

@@ -1,0 +1,102 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    &-main {
+        display: block;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        /* animation-iteration-count: 3; */
+        /* animation-delay: 3s; */
+        /* transition: all 0.3s linear; */
+    }
+    &-sub {
+        display: block;
+        letter-spacing: 17.4px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 60px;
+        /* animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
+        animation: moveInRight 1s ease-out;
+        /* transition: all 0.3s linear; */
+    }
+    @media screen and (max-width: 768px) {
+        .heading-primary-main {
+            font-size: 40px;
+            letter-spacing: 20px;
+        }
+        .heading-secondary {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .heading-primary-main {
+        font-size: 25px;
+        letter-spacing: 20px;
+    }
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-gray-dark;
+    padding: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        padding: 0;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient( to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+}
+
+.heading-3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
